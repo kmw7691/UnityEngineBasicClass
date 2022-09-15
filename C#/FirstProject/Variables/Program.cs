@@ -19,8 +19,12 @@ namespace Variables
         }
     }
 
+    // 전역변수 : 외부 클래스/객체등에서 (지역상관없이) 접근할 수 있는 변수
+
     public class Human
     {
+        // 멤버변수 : 클래스/구조체 등을 구성하는 멤버로써 선언된 변수
+
         int age;                //4byte 정수형
         float height;           //4byte 실수형
         double weight;          //8byte 실수형
