@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\Statement_SwitchCase_And_Enum.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\Statement_SwitchCase_And_Enum.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\Statement_SwitchCase_And_Enum.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\Statement_SwitchCase_And_Enum.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\Statement_SwitchCase_And_Enum.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\ref\Statement_SwitchCase_And_Enum.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\bin\Debug\net5.0\Statement_SwitchCase_And_Enum.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\ref\Statement_SwitchCase_And_Enum.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_SwitchCase_And_Enum\obj\Debug\net5.0\Statement_SwitchCase_And_Enum.genruntimeconfig.cache
