@@ -6,9 +6,9 @@ namespace Operators
     {
         static void Main(string[] args)
         {
-            float a = 14;
-            float b = 6;
-            float c = 0;
+            int a = 14;
+            int b = 6;
+            int c = 0;
 
             // 산술 연산자
             // 더하기 빼기 곱하기 나누기
@@ -107,6 +107,46 @@ namespace Operators
             //not
             //피연산자가 true이면 false반환, false이면 true반환
             Console.WriteLine(!A);
+
+
+
+            //조건부 논리연산자
+            //conditional or / conditional and
+            //========================================================
+
+            //conditional or
+            //앞쪽 피연산자가 true일 경우 뒤의 피연산자 연산하지않고 바로 true반환
+            Console.WriteLine(A || B);
+
+            //conditional and
+            //앞쪽 피연산자가 false일 경우 뒤의 피연산자 연산하지않고 바로 false반환
+            Console.WriteLine(A && B);
+
+
+            //비트연산자
+            //or, and, xor, not, shift-left, shift-right
+            //==========================================================
+            Console.WriteLine(a | b);
+            //a == 14 == 2^3 + 2^2 + 2^1 == .......00001110
+            //b == 6  ==       2^2 + 2^1 == .......00000110
+            //or result                  == .......00001110 == 14
+
+            //not
+            Console.WriteLine(~a);
+            //a == 14 == 2^3 + 2^2 + 2^1 == .......00001110
+            //not result                 == 111111111110001
+            //2의 보수 : 이진법에서 모든 자리수를 반전하고  +1 
+            //(a = -a) == (a = ~a + 1)
+
+            //shift - left
+            Console.WriteLine(a << 1);
+            //a == 14 == 2^3 + 2^2 + 2^1 == .......00001110
+            //shift-left result          == .......00011100
+
+            //shift - right
+            Console.WriteLine(a >> 2);
+            //a == 14 == 2^3 + 2^2 + 2^1 == .......00001110
+            //shift-right result         ==........00000011
         }
     }
 }

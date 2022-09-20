@@ -13,3 +13,4 @@ C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Operators\o
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Operators\obj\Debug\net5.0\ref\Operators.dll
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Operators\obj\Debug\net5.0\Operators.pdb
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Operators\obj\Debug\net5.0\Operators.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Operators\obj\Debug\net5.0\Operators.csproj.AssemblyReference.cache

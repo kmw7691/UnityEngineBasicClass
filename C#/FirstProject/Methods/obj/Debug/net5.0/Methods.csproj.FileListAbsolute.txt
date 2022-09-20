@@ -13,3 +13,4 @@ C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Methods\obj
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Methods\obj\Debug\net5.0\ref\Methods.dll
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Methods\obj\Debug\net5.0\Methods.pdb
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Methods\obj\Debug\net5.0\Methods.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Methods\obj\Debug\net5.0\Methods.csproj.AssemblyReference.cache
