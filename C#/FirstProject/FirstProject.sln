@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statement_Loop", "Statement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example02_Array2D", "Example02_Array2D\Example02_Array2D.csproj", "{E06CCB99-29AA-4FEA-B9EF-F5067A6E6A34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example01", "Example01\Example01.csproj", "{DFF8E4B9-3C7B-4984-A1DF-9E468B662F38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example01_ClassObjectInstance", "Example01\Example01_ClassObjectInstance.csproj", "{DFF8E4B9-3C7B-4984-A1DF-9E468B662F38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
