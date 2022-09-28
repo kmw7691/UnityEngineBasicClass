@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\Examaple03_HorseRiding.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\Examaple03_HorseRiding.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\Examaple03_HorseRiding.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\Examaple03_HorseRiding.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\Examaple03_HorseRiding.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\ref\Examaple03_HorseRiding.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\bin\Debug\net5.0\Examaple03_HorseRiding.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\ref\Examaple03_HorseRiding.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Examaple03_HorseRiding\obj\Debug\net5.0\Examaple03_HorseRiding.csproj.AssemblyReference.cache
