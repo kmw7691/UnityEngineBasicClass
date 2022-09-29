@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasicClass\\C#\\FirstProject\\ClaccInheritance\\ClaccInheritance.csproj",
-      "projectName": "ClaccInheritance",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasicClass\\C#\\FirstProject\\ClaccInheritance\\ClaccInheritance.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasicClass\\C#\\FirstProject\\ClaccInheritance\\ClassInheritance.csproj",
+      "projectName": "ClassInheritance",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasicClass\\C#\\FirstProject\\ClaccInheritance\\ClassInheritance.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasicClass\\C#\\FirstProject\\ClaccInheritance\\obj\\",
       "projectStyle": "PackageReference",

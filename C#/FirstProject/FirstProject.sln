@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structure", "Structure\Stru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examaple03_HorseRiding", "Examaple03_HorseRiding\Examaple03_HorseRiding.csproj", "{D87230CE-BC16-43FB-9C92-1F255303BBC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaccInheritance", "ClaccInheritance\ClaccInheritance.csproj", "{621C4DDD-3560-4D92-87AE-B7023219FEF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassInheritance", "ClaccInheritance\ClassInheritance.csproj", "{621C4DDD-3560-4D92-87AE-B7023219FEF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
