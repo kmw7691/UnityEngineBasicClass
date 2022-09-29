@@ -8,12 +8,35 @@ namespace ClassInheritance
 {
     // 상속 
     // 클래스이름 뒤에 : 쓰고 상속받을 클래스 이름 씀
-    internal class Human : Creature
+    internal class Human : Creature, i_TwoLeggedWalker, i_FourLeggedWalker
     {
         public string Name;
         public int PhoneNumber;
         public string EmailAddress;
 
+
+       public void TwoLeggedWalk()
+        {
+            Console.WriteLine($"{Name}(이)가 이족보행한다");
+        }
+
+
+        public void FourLeggedWalk()
+        {
+            Console.WriteLine($"{Name}(이)가 사족보행한다");
+        }
+
+        public Human()
+        {
+
+        }
+
+        public Human(string name, int phoneNumber, string emailAddress)
+        {
+            Name = name;
+            PhoneNumber = phoneNumber;
+            EmailAddress = emailAddress;
+        }
 
         // override 키워드
         // 부모 클래스의 멤버를 재정의 할 때 쓰는 키워드
