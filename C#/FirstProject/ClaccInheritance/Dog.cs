@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassInheritance
 {
-    class Dog : Creature, i_FourLeggedWalker
+    internal class Dog : Creature, i_FourLeggedWalker
     {
+        public float TailLength;
+
         public override void Breath()
         {
             Console.WriteLine("개가 숨을 쉰다");
@@ -15,7 +17,7 @@ namespace ClassInheritance
 
         public void FourLeggedWalk()
         {
-            Console.WriteLine("개가 사족보행한다");
+            Console.WriteLine("개가 사족보행 한다");
         }
     }
 }

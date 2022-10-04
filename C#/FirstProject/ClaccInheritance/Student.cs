@@ -10,22 +10,21 @@ namespace ClassInheritance
     {
         public int StudentNumber;
         public float AverageMark;
-        private string[] seminarTaken = new string[3]
+        private string[] _seminarsTaken = new string[3]
         {
-            "Mathmatics",
-            "Kinetics",
+            "Mathatics",
+            "Kinematics",
             "Dynamics"
         };
-
 
         public bool IsEligibleToEnroll()
         {
             return AverageMark >= 3.5f;
         }
 
-        public string[] GetSeminarTaken()
+        public string[] GetSeminarsTaken()
         {
-            return seminarTaken;
+            return _seminarsTaken;
         }
 
         public override void Breath()
@@ -35,7 +34,7 @@ namespace ClassInheritance
 
         public override void PurchaseParkingPass()
         {
-            Console.WriteLine($"{Name}이 주차권을 구매 했습니다.(학생할인 20%적용)");
+            Console.WriteLine($"{Name} 이 주차권을 구매 했습니다. 학생할인 20% 적용 !!");
         }
     }
 }
