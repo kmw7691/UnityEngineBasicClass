@@ -13,3 +13,4 @@ C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_L
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_Loop\obj\Debug\net5.0\ref\Statement_Loop.dll
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_Loop\obj\Debug\net5.0\Statement_Loop.pdb
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_Loop\obj\Debug\net5.0\Statement_Loop.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\Statement_Loop\obj\Debug\net5.0\Statement_Loop.csproj.AssemblyReference.cache

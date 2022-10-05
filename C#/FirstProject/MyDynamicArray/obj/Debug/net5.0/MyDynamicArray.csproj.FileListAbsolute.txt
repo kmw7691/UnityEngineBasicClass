@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\MyDynamicArray.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\MyDynamicArray.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\MyDynamicArray.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\MyDynamicArray.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\MyDynamicArray.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\ref\MyDynamicArray.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\bin\Debug\net5.0\MyDynamicArray.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\ref\MyDynamicArray.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDynamicArray\obj\Debug\net5.0\MyDynamicArray.genruntimeconfig.cache
