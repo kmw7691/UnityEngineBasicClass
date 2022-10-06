@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\MyLinkedList.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\MyLinkedList.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\MyLinkedList.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\MyLinkedList.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\MyLinkedList.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\ref\MyLinkedList.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\bin\Debug\net5.0\MyLinkedList.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\ref\MyLinkedList.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyLinkedList\obj\Debug\net5.0\MyLinkedList.genruntimeconfig.cache
