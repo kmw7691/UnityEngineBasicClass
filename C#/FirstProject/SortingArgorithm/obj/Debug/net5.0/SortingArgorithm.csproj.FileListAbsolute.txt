@@ -1,0 +1,15 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\SortingArgorithm.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\SortingArgorithm.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\SortingArgorithm.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\SortingArgorithm.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\SortingArgorithm.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\ref\SortingArgorithm.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\bin\Debug\net5.0\SortingArgorithm.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\ref\SortingArgorithm.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.genruntimeconfig.cache

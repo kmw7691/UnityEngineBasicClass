@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MyDynamicArray
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -15,12 +15,17 @@ namespace MyDynamicArray
             list.Remove(1);
             Console.WriteLine(list[0]);
 
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+
             foreach (int item in list)
             {
                 Console.WriteLine(item);
             }
 
-            //foreach문 구현 원리
+            // foreach 문 구현 원리
             using (IEnumerator<int> enumerator = list.GetEnumerator())
             {
                 while (enumerator.MoveNext())
@@ -28,8 +33,6 @@ namespace MyDynamicArray
                     Console.WriteLine(enumerator.Current);
                 }
             }
-            
-
 
             MyDynamicArray<int> dynamicArray = new MyDynamicArray<int>();
             dynamicArray.Add(1);
@@ -44,7 +47,7 @@ namespace MyDynamicArray
                 Console.WriteLine(dynamicArray[i]);
             }
 
-            foreach(int item in dynamicArray)
+            foreach (int item in dynamicArray)
             {
                 Console.WriteLine(item);
             }

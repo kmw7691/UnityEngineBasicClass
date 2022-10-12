@@ -1,0 +1,15 @@
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\MyDictionaryOfT.exe
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\MyDictionaryOfT.deps.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\MyDictionaryOfT.runtimeconfig.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\MyDictionaryOfT.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\MyDictionaryOfT.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\ref\MyDictionaryOfT.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\bin\Debug\net5.0\MyDictionaryOfT.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\ref\MyDictionaryOfT.dll
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.pdb
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\MyDictionaryOfT\obj\Debug\net5.0\MyDictionaryOfT.genruntimeconfig.cache
