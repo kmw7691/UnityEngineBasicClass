@@ -13,3 +13,4 @@ C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgo
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\ref\SortingArgorithm.dll
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.pdb
 C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\UnityEngineBasicClass\C#\FirstProject\SortingArgorithm\obj\Debug\net5.0\SortingArgorithm.csproj.AssemblyReference.cache
