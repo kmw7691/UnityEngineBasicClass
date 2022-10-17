@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    float _h;
+    float _v;
+
+    private void Update()
     {
-        
+        _h = Input.GetAxisRaw("Horizontal");
+        _v = Input.GetAxisRaw("Vertical");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        Vector3 dir = new Vector3(_h, 0.0f, _v);
+
+        transform.position += dir * Time.fixedDeltaTime;
     }
 }
