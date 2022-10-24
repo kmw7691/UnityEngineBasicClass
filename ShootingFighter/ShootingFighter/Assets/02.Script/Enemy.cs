@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(Vector3.back * _speed * Time.fixedDeltaTime);
+        transform.Translate(Vector3.forward * _speed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter(Collider other)

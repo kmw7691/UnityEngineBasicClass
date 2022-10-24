@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
             //out인자로 넘겨진 변수에 해당 함수 반환시 마지막으로 대입되었던 값이 반환된다
             if(other.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
             {
-                enemy.Hurt(10.0f);
+                enemy.Hurt(35.0f);
             }
 
            // other.gameObject.GetComponent<Enemy>().Hurt(100.0f);
