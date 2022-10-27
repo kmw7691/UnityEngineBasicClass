@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TiltInverse : Tile
+public class TileInverse : Tile
 {
     public override void OnHere()
     {
