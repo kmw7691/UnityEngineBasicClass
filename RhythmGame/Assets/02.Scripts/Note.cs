@@ -13,7 +13,6 @@ public enum HitType
     Cool
 }
 
-
 public class Note : MonoBehaviour
 {
     public void Hit(HitType hitType)

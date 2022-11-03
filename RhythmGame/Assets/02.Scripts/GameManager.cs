@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-            Destroy(Instance);
+            Destroy(gameObject);
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
         else
             Debug.Log("[GameManager] : 곡을 먼저 선택하세요");
     }
-
 
     private void Update()
     {

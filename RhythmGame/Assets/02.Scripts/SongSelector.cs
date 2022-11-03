@@ -10,8 +10,9 @@ public class SongSelector : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-            Destroy(Instance);
+            Destroy(gameObject);
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public string SelectedSongName;
@@ -19,7 +20,6 @@ public class SongSelector : MonoBehaviour
     public SongData Data;
     public bool IsLoaded { get; private set; }
     public bool IsSelected { get; private set; }
-
 
 
     public void Select(string songName)
