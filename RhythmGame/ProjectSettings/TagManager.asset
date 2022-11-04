@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - NoteHitter
+  - NoteHitterSportlight
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: NoteHitter
     uniqueID: 1013988457
+    locked: 0
+  - name: sportlight
+    uniqueID: 3544895591
     locked: 0
