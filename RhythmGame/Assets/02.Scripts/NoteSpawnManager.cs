@@ -6,6 +6,8 @@ using UnityEngine.Video;
 
 public class NoteSpawnManager : MonoBehaviour
 {
+    public static NoteSpawnManager Instance;
+
     [SerializeField] private Transform _spawnersParent;
     [SerializeField] private Transform _hittersParent;
     [SerializeField] private VideoPlayer _videoPlayer;
@@ -16,6 +18,16 @@ public class NoteSpawnManager : MonoBehaviour
 
     private Dictionary<KeyCode, NoteSpawner> _spawners = new Dictionary<KeyCode, NoteSpawner>();
     private Queue<NoteData> _noteDataQueue = new Queue<NoteData>();
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        StartCoroutine(E_Init());
+    }
 
     public void StartSpawn()
     {
@@ -33,19 +45,22 @@ public class NoteSpawnManager : MonoBehaviour
 
         while (_noteDataQueue.Count > 0)
         {
-            //가장 앞에 있는 큐의 시간이 경과한 시간보다 작으면 해당 데이터 노트 소환
-            if (_noteDataQueue.Peek().Time < Time.time - timeMark)
+            while (_noteDataQueue.Count > 0)
             {
-                noteData = _noteDataQueue.Dequeue();
-                _spawners[noteData.Key].Spawn();
-            }
+                //가장 앞에 있는 큐의 시간이 경과한 시간보다 작으면 해당 데이터 노트 소환
+                if (_noteDataQueue.Peek().Time < Time.time - timeMark)
+                {
+                    noteData = _noteDataQueue.Dequeue();
+                    _spawners[noteData.Key].Spawn();
+                }
 
-            else
-            {
-                break;
+                else
+                {
+                    break;
+                }
             }
-        }
-        yield return null;
+            yield return null;
+        }        
     }
 
     IEnumerator E_Init()
@@ -62,6 +77,8 @@ public class NoteSpawnManager : MonoBehaviour
         IOrderedEnumerable<NoteData> noteDataFilted = SongSelector.Instance.Data.Notes.OrderBy(note => note.Time);
         foreach (NoteData noteData in noteDataFilted)
             _noteDataQueue.Enqueue(noteData);
+
+        StartSpawn();
     }
 
     private void PlayVideo()
