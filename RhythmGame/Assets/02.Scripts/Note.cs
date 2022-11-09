@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public enum HitType
+public enum HitTypes
 {
     None,
     Bad,
@@ -15,25 +15,32 @@ public enum HitType
 
 public class Note : MonoBehaviour
 {
-    public void Hit(HitType hitType)
+    public void Hit(HitTypes hitType)
     {
         switch (hitType)
         {
-            case HitType.None:
+            case HitTypes.None:
                 break;
-            case HitType.Bad:
+            case HitTypes.Bad:
+            case HitTypes.Miss:
+                GameStatus.CurrentCombo = 0;
                 break;
-            case HitType.Miss:
+            case HitTypes.Good:
+                GameStatus.CurrentCombo++;
                 break;
-            case HitType.Good:
+            case HitTypes.Great:
+                GameStatus.CurrentCombo++;
                 break;
-            case HitType.Great:
-                break;
-            case HitType.Cool:
+            case HitTypes.Cool:
+                GameStatus.CurrentCombo++;
                 break;
             default:
                 break;
         }
+
+        PopUpTextManager.Instance.PopUp(hitType);
+
+        Destroy(gameObject);
     }
 
     private void FixedUpdate()
