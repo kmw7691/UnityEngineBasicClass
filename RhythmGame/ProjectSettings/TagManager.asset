@@ -17,6 +17,7 @@ TagManager:
   - 
   - 
   - Note
+  - NoteDestroyer
   - 
   - 
   - 
@@ -35,8 +36,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - 3D Object
   m_SortingLayers:
   - name: Default
     uniqueID: 0
