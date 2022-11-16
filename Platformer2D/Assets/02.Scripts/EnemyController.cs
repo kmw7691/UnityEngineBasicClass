@@ -44,7 +44,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _aiBehaviorTimeMin = 0.1f;
     [SerializeField] private float _aiBehaviorTimeMax = 2.0f;
     private float _aiBehaviorTimer;
-    [SerializeField] private LayerMask _targetLayer;
+    [SerializeField] protected LayerMask _TargetLayer;
 
     //Movement
     private const int DIRECTION_LEFT = -1;
@@ -76,15 +76,16 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private bool _moveEnable = true;
     [SerializeField] private bool _movable = false;
     [SerializeField] private float _movespeed = 1.0f;
-    private Rigidbody2D _rb;
+    protected Rigidbody2D _Rb;
     private CapsuleCollider2D _col;
+    private Collider2D _target;
 
     //animation
     private Animator _animator;
     
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        _Rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _col = GetComponent<CapsuleCollider2D>();
     }
@@ -98,7 +99,7 @@ public class EnemyController : MonoBehaviour
     private void FixedUpdate()
     {
         if(_moveEnable && _movable)
-            _rb.MovePosition(_rb.position + Direction * Vector2.right * _movespeed * Time.fixedDeltaTime);
+            _Rb.MovePosition(_Rb.position + Direction * Vector2.right * _movespeed * Time.fixedDeltaTime);
     }
 
     private void UpdateAI()
@@ -106,18 +107,17 @@ public class EnemyController : MonoBehaviour
         if(Current == States.Hurt || Current ==States.Die)
            return;
 
-        Collider2D target = null;
         switch (_ai)
         {
             case AI.Idle:
                 break;
             case AI.Think:
                 {
-                    target = Physics2D.OverlapCircle(_rb.position, _aiDetectRange, _targetLayer);
-                    if(target != null)
+                    _target = Physics2D.OverlapCircle(_Rb.position, _aiDetectRange, _TargetLayer);
+                    if(_target != null)
                     {
                         if(_aiAttackEnable &&
-                            Vector2.Distance(_rb.position, target.transform.position) < _aiAttackRange)
+                            Vector2.Distance(_Rb.position, _target.transform.position) < _aiAttackRange)
                         {
                             _ai = AI.AttackTarget;
                             ChangeState(States.Attack);
@@ -181,13 +181,31 @@ public class EnemyController : MonoBehaviour
                 break;
             case AI.FollowTarget:
                 {
-                    if(_rb.position.x < target.transform.position.x + _col.size.x)
+                    //타겟이 범위를 벗어남
+                    if(_target == null ||
+                       Vector2.Distance(_Rb.position, _target.transform.position) > _aiDetectRange)
                     {
-                        Direction = DIRECTION_RIGHT;
+                        _target = null;
+                        _ai = AI.Think;
                     }
-                    else if(_rb.position.x > target.transform.position.x - _col.size.x)
+                    //타겟이 공격 범위내에 들어옴
+                    else if (_aiAttackEnable &&
+                             Vector2.Distance(_Rb.position, _target.transform.position) < _aiAttackRange)
                     {
-                        Direction = DIRECTION_LEFT;
+                        ChangeState(States.Attack);
+                        _ai = AI.AttackTarget;
+                    }
+                    //둘다 아니면 그냥 따라감
+                    else
+                    {
+                        if (_Rb.position.x < _target.transform.position.x - _col.size.x)
+                        {
+                            Direction = DIRECTION_RIGHT;
+                        }
+                        else if (_Rb.position.x > _target.transform.position.x + _col.size.x)
+                        {
+                            Direction = DIRECTION_LEFT;
+                        }
                     }
                 }
                 break;
@@ -273,19 +291,14 @@ public class EnemyController : MonoBehaviour
         {
             case States.Idle:
                 return Idle();
-                break;
             case States.Move:
                 return Move();
-                break;
             case States.Attack:
                 return Attack();
-                break;
             case States.Hurt:
                 return Hurt();
-                break;
             case States.Die:
                 return Die();
-                break;
             default:
                 throw new System.Exception("Wrong State");
         }
@@ -395,11 +408,25 @@ public class EnemyController : MonoBehaviour
             case 0:
                 // nothing to do
                 break;
+            //공격 애니메이션 재생
             case 1:
                 _animator.Play("Attack");
                 _attackStep++;
                 break;
+            //공격 시전 시간
+            //---------------------------------------------------------
             case 2:
+                {
+                    if (_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.7f)
+                    {
+                        AttackBehavior();
+                        _attackStep++;
+                    }
+                }
+                break;
+            //공격 모션 종료 대기
+            //---------------------------------------------------------
+            case 3:
                 // finished
                 {
                     if(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
@@ -417,7 +444,7 @@ public class EnemyController : MonoBehaviour
 
         return next;
     }
-
+    
     //Die 가능 조건
     private bool CanDie()
     {
@@ -455,5 +482,19 @@ public class EnemyController : MonoBehaviour
         }
 
         return next;
+    }
+
+    protected virtual void AttackBehavior()
+    {
+
+    }
+
+    protected virtual void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, _aiDetectRange);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, _aiAttackRange);
     }
 }
