@@ -16,12 +16,13 @@ TagManager:
   - Ground
   - 
   - Player
-  - PlayerCollider
+  - PlayerCollision
   - 
   - 
   - 
   - Enemy
   - EnemyCollision
+  - EnemyProjectile
   - 
   - 
   - 
@@ -34,8 +35,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - MapBound
   - 
   m_SortingLayers:
   - name: Default

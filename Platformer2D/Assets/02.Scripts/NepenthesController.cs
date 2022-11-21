@@ -1,25 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class NependesController : EnemyController
+public class NepenthesController : EnemyController
 {
     [SerializeField] private Vector2 _attackBoxCastCenter;
     [SerializeField] private Vector2 _attackBoxCastSize;
     protected override void AttackBehavior()
     {
         base.AttackBehavior();
-        RaycastHit2D hit= Physics2D.BoxCast(origin: _Rb.position + new Vector2(_attackBoxCastCenter.x * Direction, _attackBoxCastCenter.y),
-                                            size: _attackBoxCastSize,
-                                            angle: 0.0f,
-                                            direction: Vector2.zero,
-                                            distance: 0.0f,
-                                            layerMask: _TargetLayer);
+        RaycastHit2D hit = Physics2D.BoxCast(origin: Rb.position + new Vector2(_attackBoxCastCenter.x * Direction, _attackBoxCastCenter.y),
+                                             size: _attackBoxCastSize,
+                                             angle: 0.0f,
+                                             direction: Vector2.zero,
+                                             distance: 0.0f,
+                                             layerMask: TargetLayer);
 
-        if(hit.collider != null)
+        if (hit.collider != null)
         {
-            Debug.Log("Casted target");
+            Debug.Log("Casted target!");
         }
     }
 
