@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -41,6 +42,16 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _speed = 2.0f;
     private Rigidbody2D _rb;
     private StateMachine _machine;
+
+    public void RefreshMove()
+    {
+        _move.x = _h * _speed;
+    }
+
+    public void ResetMove()
+    {
+        _move = Vector2.zero;
+    }
 
     private void Awake()
     {
