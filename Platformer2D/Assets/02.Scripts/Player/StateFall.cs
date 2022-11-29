@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,19 +5,17 @@ using UnityEngine;
 public class StateFall : StateBase
 {
     private GroundDetector _groundDetector;
-
     public StateFall(StateMachine.StateTypes type, StateMachine machine) : base(type, machine)
     {
-        _groundDetector = machine.GetComponent<GroundDetector>();
-
+        _groundDetector = machine.GetComponentInChildren<GroundDetector>();
     }
 
     public override bool CanExecute()
     {
         return (Machine.CurrentType == StateMachine.StateTypes.Jump ||
                 Machine.CurrentType == StateMachine.StateTypes.Idle ||
-                Machine.CurrentType == StateMachine.StateTypes.Move &&
-                _groundDetector.IsDetected == false);
+                Machine.CurrentType == StateMachine.StateTypes.Move) &&
+                _groundDetector.IsDetected == false;
     }
 
     public override void Execute()
@@ -27,7 +24,6 @@ public class StateFall : StateBase
         Animator.Play("Fall");
         Movement.DirectionChangable = true;
         Movement.Movable = false;
-
     }
 
     public override StateMachine.StateTypes Update()
@@ -43,7 +39,7 @@ public class StateFall : StateBase
             case Commands.Casting:
                 break;
             case Commands.OnAction:
-                if(_groundDetector.IsDetected)
+                if (_groundDetector.IsDetected)
                 {
                     MoveNext();
                 }

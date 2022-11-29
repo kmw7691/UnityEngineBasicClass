@@ -5,10 +5,9 @@ using UnityEngine;
 public class StateMove : StateBase
 {
     private GroundDetector _groundDetector;
-
     public StateMove(StateMachine.StateTypes type, StateMachine machine) : base(type, machine)
     {
-        _groundDetector = machine.GetComponent<GroundDetector>();
+        _groundDetector = machine.GetComponentInChildren<GroundDetector>();
     }
 
     public override bool CanExecute()

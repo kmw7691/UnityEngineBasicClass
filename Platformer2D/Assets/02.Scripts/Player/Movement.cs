@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -62,7 +61,7 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        if(DirectionChangable)
+        if (DirectionChangable)
         {
             if (_h > _tolerance)
                 Direction = DIRECTION_RIGHT;

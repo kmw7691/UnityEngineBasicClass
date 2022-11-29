@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class StateSlide : StateBase
@@ -11,7 +10,6 @@ public class StateSlide : StateBase
     private Vector2 _size = new Vector2(0.14f, 0.14f);
     private Vector2 _offsetOrigin;
     private Vector2 _sizeOrigin;
-
 
     public StateSlide(StateMachine.StateTypes type, StateMachine machine) : base(type, machine)
     {
@@ -43,6 +41,7 @@ public class StateSlide : StateBase
         RollBackColliders();
     }
 
+
     public override StateMachine.StateTypes Update()
     {
         StateMachine.StateTypes next = Type;
@@ -65,7 +64,7 @@ public class StateSlide : StateBase
                     if (Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                     {
                         Current = Commands.Finish;
-                    }
+                    }    
                 }
                 break;
             case Commands.Finish:

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class StateCrouch : StateBase
@@ -11,7 +10,6 @@ public class StateCrouch : StateBase
     private Vector2 _size = new Vector2(0.14f, 0.14f);
     private Vector2 _offsetOrigin;
     private Vector2 _sizeOrigin;
-
 
     public StateCrouch(StateMachine.StateTypes type, StateMachine machine) : base(type, machine)
     {
@@ -43,6 +41,7 @@ public class StateCrouch : StateBase
         RollBackColliders();
     }
 
+
     public override StateMachine.StateTypes Update()
     {
         StateMachine.StateTypes next = Type;
@@ -57,7 +56,9 @@ public class StateCrouch : StateBase
                 break;
             case Commands.OnAction:
                 {
-                    if (Input.GetKey(KeyCode.DownArrow) == false)
+                    if (Input.GetKey(KeyCode.LeftAlt))
+                        next = StateMachine.StateTypes.Jump;
+                    else if (Input.GetKey(KeyCode.DownArrow) == false)
                         next = StateMachine.StateTypes.Idle;
                 }
                 break;

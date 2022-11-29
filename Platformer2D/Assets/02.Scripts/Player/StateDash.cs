@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class StateDash : StateBase
 {
     private Rigidbody2D _rb;
-
     public StateDash(StateMachine.StateTypes type, StateMachine machine) : base(type, machine)
     {
         _rb = machine.GetComponent<Rigidbody2D>();
@@ -29,10 +27,6 @@ public class StateDash : StateBase
         Movement.ResetMove();
     }
 
-    public override void Stop()
-    {
-        base.Stop();
-    }
 
     public override StateMachine.StateTypes Update()
     {
@@ -53,10 +47,10 @@ public class StateDash : StateBase
                 break;
             case Commands.OnAction:
                 {
-                    if(Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                    if (Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                     {
                         Current = Commands.Finish;
-                    }
+                    }    
                 }
                 break;
             case Commands.Finish:
