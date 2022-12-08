@@ -32,9 +32,9 @@ public class ProjectileDetector : MonoBehaviour
         ProjectileDetected = Physics2D.OverlapBox((Vector2)transform.position + new Vector2(_offset.x * _movement.Direction, _offset.y), _size, 0.0f, _targetLayer);
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position + new Vector3(_offset.x * _movement.Direction, _offset.y, 0.0f), _size);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireCube(transform.position + new Vector3(_offset.x * _movement.Direction, _offset.y, 0.0f), _size);
+    //}
 }
