@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class StateAttack : StateBase
@@ -9,20 +10,15 @@ public class StateAttack : StateBase
     {
         Normal,
         OnAir,
-        Dash
+        Dash,
     }
-
     private AttackBehaviorTypes _type;
-
     private Vector2 _normalAttackCastCenter = new Vector2(0.17f, 0.16f);
     private Vector2 _normalAttackCastSize = new Vector2(0.4f, 0.4f);
     private Vector2 _dashAttackCastCenter = new Vector2(0.18f, 0.16f);
     private Vector2 _dashAttackCastSize = new Vector2(0.7f, 0.4f);
     private LayerMask _targetLayer = 1<<LayerMask.NameToLayer("Enemy");
     private Player _player;
-
-
-    private Movement _movement;
 
     public StateAttack(StateMachine.StateTypes type, StateMachine machine) : base(type, machine)
     {
@@ -66,41 +62,48 @@ public class StateAttack : StateBase
                             case AttackBehaviorTypes.Normal:
                             case AttackBehaviorTypes.OnAir:
                                 {
-                                   RaycastHit2D hit = Physics2D.BoxCast((Vector2)Machine.transform.position 
-                                                                                 + new Vector2((_normalAttackCastCenter.x * Movement.Direction), _normalAttackCastCenter.y),
-                                                                                               _normalAttackCastSize,
-                                                                                               0.0f,
-                                                                                               Vector2.zero,
-                                                                                               0.0f,
-                                                                                               _targetLayer);
-
+                                    RaycastHit2D hit = Physics2D.BoxCast((Vector2)Machine.transform.position
+                                                                           + new Vector2(_normalAttackCastCenter.x * Movement.Direction, _normalAttackCastCenter.y),
+                                                                          _normalAttackCastSize,
+                                                                          0.0f,
+                                                                          Vector2.zero,
+                                                                          0.0f,
+                                                                          _targetLayer);
                                     if (hit.collider)
                                     {
-                                        hit.collider.GetComponent<Enemy>().Hp -= _player.ATK;
+                                        hit.collider.GetComponent<Enemy>().Hurt(Machine.gameObject, _player.ATK, false);
                                     }
                                 }
                                 break;
                             case AttackBehaviorTypes.Dash:
                                 {
-                                    RaycastHit2D[] hits = Physics2D.BoxCastAll((Vector2)Machine.transform.position
-                                                                                 + new Vector2((_normalAttackCastCenter.x * Movement.Direction), _normalAttackCastCenter.y),
-                                                                                               _normalAttackCastSize,
-                                                                                               0.0f,
-                                                                                               Vector2.zero,
-                                                                                               0.0f,
-                                                                                               _targetLayer);
+                                    //RaycastHit2D[] hits = Physics2D.BoxCastAll((Vector2)Machine.transform.position
+                                    //                                             + new Vector2(_normalAttackCastCenter.x * Movement.Direction, _normalAttackCastCenter.y),
+                                    //                                            _normalAttackCastSize,
+                                    //                                            0.0f,
+                                    //                                            Vector2.zero,
+                                    //                                            0.0f,
+                                    //                                            _targetLayer);
+                                    //
+                                    //foreach (RaycastHit2D hit in hits)
+                                    //{
+                                    //    Enemy enemy = hit.collider.GetComponent<Enemy>();
+                                    //    enemy.HP -= _player.ATK;
+                                    //}
 
-                                    IEnumerable<Enemy> enemies = Physics2D.BoxCastAll((Vector2)Machine.transform.position
-                                                                                  + new Vector2((_normalAttackCastCenter.x * Movement.Direction), _normalAttackCastCenter.y),
-                                                                                                _normalAttackCastSize,
-                                                                                                0.0f,
-                                                                                                Vector2.zero,
-                                                                                                0.0f,
-                                                                                                _targetLayer).Select(hit => hit.collider.gameObject.GetComponent<Enemy>());
-                                    
-                                    foreach(Enemy enemy in enemies)
+
+                                    IEnumerable<Enemy> enemies = Physics2D.BoxCastAll((Vector2)Machine.transform.position 
+                                                                                        + new Vector2(_normalAttackCastCenter.x * Movement.Direction, _normalAttackCastCenter.y),
+                                                                                       _normalAttackCastSize,
+                                                                                       0.0f,
+                                                                                       Vector2.zero,
+                                                                                       0.0f,
+                                                                                       _targetLayer)
+                                                                            .Select(hit => hit.collider.gameObject.GetComponent<Enemy>());
+
+                                    foreach (Enemy enemy in enemies)
                                     {
-                                        enemy.Hp -= _player.ATK;
+                                        enemy.Hurt(Machine.gameObject, _player.ATK, false);
                                     }
                                 }
                                 break;
@@ -108,12 +111,13 @@ public class StateAttack : StateBase
                                 break;
                         }
 
+
                         MoveNext();
                     }
                 }
                 break;
             case Commands.OnAction:
-                {
+                {                    
                     if (Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                         MoveNext();
                 }
@@ -134,21 +138,17 @@ public class StateAttack : StateBase
     {
         Movement.DirectionChangable = false;
         Movement.Movable = false;
-
         if (Machine.PreviousType == StateMachine.StateTypes.Dash)
         {
             _type = AttackBehaviorTypes.Dash;
             Animator.Play("DashAttack");
-
         }
-
         else if (Machine.PreviousType == StateMachine.StateTypes.Jump ||
                  Machine.PreviousType == StateMachine.StateTypes.Fall)
         {
             _type = AttackBehaviorTypes.OnAir;
             Animator.Play("Attack");
         }
-
         else
         {
             _type = AttackBehaviorTypes.Normal;

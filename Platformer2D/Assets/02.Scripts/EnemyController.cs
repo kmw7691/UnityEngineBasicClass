@@ -66,7 +66,7 @@ public class EnemyController : MonoBehaviour
             } 
         }
     }
-    [SerializeField] private bool _moveEnable = true;
+    public bool MoveEnable = true;
     [SerializeField] private bool _movable = false;
     [SerializeField] private float _moveSpeed = 1.0f;
     protected Rigidbody2D Rb;
@@ -76,23 +76,22 @@ public class EnemyController : MonoBehaviour
     // animation
     private Animator _animator;
 
-    //Enemy
-    private Enemy _enemy;
-
-    
+    // Enemy
+    protected Enemy Enemy;
 
     private void Awake()
     {
         Rb = GetComponent<Rigidbody2D>();
         _col = GetComponent<CapsuleCollider2D>();
-        _animator = GetComponent<Animator>();        
-        _enemy = GetComponent<Enemy>();
+        _animator = GetComponent<Animator>();
+        Enemy = GetComponent<Enemy>();
+        Direction = DIRECTION_RIGHT;
     }
 
     private void Start()
     {
-        _enemy.OnHpMin += () => ChangeState(States.Die);
-        _enemy.OnHpDecrease += () => ChangeState(States.Hurt);
+        Enemy.OnHpMin += () => ChangeState(States.Die);
+        Enemy.OnHpDecrease += () => ChangeState(States.Hurt);
     }
 
     private void Update()
@@ -103,7 +102,7 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_moveEnable && _movable)
+        if (MoveEnable && _movable)
             Rb.MovePosition(Rb.position + Direction * Vector2.right * _moveSpeed * Time.fixedDeltaTime);
     }
 
